@@ -1,0 +1,23 @@
+### correct login
+POST http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+    {
+        "email": "alee494@gmail.com",
+        "password": "123"
+    }
+
+### gets recipes of the user above
+GET http://localhost:3000/recipes HTTP/1.1
+
+### post recipe without image
+POST http://localhost:3000/recipes HTTP/1.1
+Content-Type: application/json
+
+    {
+        "title": "chicken",
+        "description": "make it",
+        "videoLink": "none",
+        "filename": "../../uploads/1685246627223-110534913-CSC_365___Homework_4___Bands_RA (4).pdf"
+    
+    }

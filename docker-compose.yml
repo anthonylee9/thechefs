@@ -1,0 +1,14 @@
+# This docker file launches containers based on image(s). We are using image mariadb.
+# We didn't have to install mariadb. This container launches it. 
+
+# There are different SQL databases. Mariadb is one kind. Each are slightly different
+# but we can use SQL (standard query language) on all of them. 
+
+version: "3"
+services:
+  mysql-server:
+      image: mariadb:latest 
+      ports: 
+        - "3306:3306" # Runs on port 3306.
+      environment:
+          MYSQL_ROOT_PASSWORD: password

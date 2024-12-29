@@ -1,0 +1,8 @@
+body {
+  font-family: 'Mandali', sans-serif;
+  background-color: rgb(255, 247, 232);
+}
+
+.v-btn {
+  box-shadow: none;
+}
